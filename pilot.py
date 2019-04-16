@@ -22,6 +22,12 @@ while running is True:
     elif x == '3':
         y.clients[12345].deposit(int(input('Montant du retrait: ')) * -1)
     else:
-        running = False
+        anwser = input('Voulez vous quitter (Y/N)?')
+        if anwser.upper() == 'Y':
+            running = False
 
-print('ta mere')
+        elif anwser.upper() == 'N':
+            running = True
+
+
+
